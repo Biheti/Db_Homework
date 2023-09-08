@@ -53,7 +53,7 @@ BEGIN
 DECLARE @Result VARCHAR(50)
 SELECT @Result = t.FirstName + ' ' + t.LastName 
 FROM dbo.Teacher t
-WHERE LEN(t.FirstName) < 5 and substring (t.FirstName,3,2) = substring (t.LastName,3,2) 
+WHERE LEN(t.FirstName) < 5 and substring (t.FirstName,1,3) = substring (t.LastName,1,3) 
 RETURN @Result
 END
 
