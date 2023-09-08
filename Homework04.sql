@@ -29,6 +29,8 @@ FROM @StudentTable
 --Fill the temp table with all Male students having First Name starting with ‘A’
 --Retrieve the students from the table which last name is with 7 characters
 
+DROP TABLE IF EXISTS  #TempStudentTable
+
 CREATE TABLE #TempStudentTable
 (LastName NVARCHAR(50), EnrolledDate DATE)
 
